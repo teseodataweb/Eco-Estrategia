@@ -36,6 +36,9 @@
     <link href="assets/css/custom-style.css" rel="stylesheet" type="text/css">
     <link href="assets/css/special-classes.css" rel="stylesheet" type="text/css">
     <link href="../../unpkg.com/aos%402.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper CSS y JS (añadir aquí antes de cerrar el head) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -160,14 +163,14 @@
             <div class="row">
                 <div class="col-lg-7 col-md-12 col-sm-12 col-12">
                     <div class="banner-section-content position-relative">
-                        <h1 data-aos="fade-up">Confianza contable y estrategia fiscal para hacer crecer tu empresa<span></span>
+                        <h1 data-aos="fade-up"> Confianza contable y estrategia fiscal para hacer crecer tu  <span>empresa</span>
                         </h1>
                         <figure class="mb-0 banner_line_box position-absolute">
                             <img src="assets/images/banner_line_box.png" alt="" class="img-fluid">
                         </figure>
                         <p class="text-white text-size-16" data-aos="fade-right">En Eco Estrategia transformamos tu contabilidad en una herramienta de crecimiento. Cumple con tus obligaciones fiscales, optimiza tus finanzas y toma decisiones con total claridad.</p>
                         <div class="btn_wrapper" data-aos="fade-up">
-                            <a class="text-decoration-none default-btn hover-effect readmore_btn" href="about.html">Agenda tu diagnóstico contable gratuito <figure class="mb-0 white_arrow"><img src="assets/images/arrow_right.png" alt="" class="img-fluid"></figure></a>
+                            <a class="text-decoration-none default-btn hover-effect readmore_btn" href="about.html"> Agenda tu diagnóstico contable gratuito<figure class="mb-0 white_arrow"><img src="assets/images/arrow_right.png" alt="" class="img-fluid"></figure></a>
                         </div>
                     </div>
                 </div>
@@ -182,9 +185,8 @@
         <img src="assets/images/banner_background_shape.png" alt="" class="img-fluid">
     </figure>
 </div>
-<h4></h4>
 <!-- ABOUT OUR COMPANY SECTION -->
-<section class="about_company_section position-relative">
+<!--section class="about_company_section position-relative">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 col-12">
@@ -256,84 +258,136 @@
         </div>
     </div>
 </section>
+<section class="services_section">
+  <div class="container">
+    <div class="services_wrapper">
+
 <!-- LATEST SERVICES SECTION -->
 <section class="services_section">
-    <div class="container">
-        <div class="services_wrapper">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="services_content">
-                        <figure class="mb-0 zero_two">
-                            <img src="assets/images/02.png" alt="" class="img-fluid">
-                        </figure>
-                        <h5>Nuestros servicios contables y fiscales</h5>
-                        <h2>Soluciones contables y fiscales con precisión, cumplimiento y estrategia.</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row" data-aos="fade-up">
-                <!-- Servicio 1 -->
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="services_box">
-                        <div class="services_image">
-                            <figure class="mb-0">
-                                <img src="assets/images/services_1.jpg" alt="" class="img-fluid">
-                            </figure>  
-                        </div>
-                        <div class="services_box_content">
-                            <h3>Contabilidad Integral</h3>
-                            <p class="text-size-14">
-                                Mantén tus finanzas en orden con registros precisos, estados financieros confiables y análisis claros que impulsan decisiones inteligentes.
-                            </p>
-                            <a href="services.html" class="btn btn-primary mt-2">Ver servicio</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Servicio 2 -->
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="services_box">
-                        <div class="services_image">
-                            <figure class="mb-0">
-                                <img src="assets/images/services_2.jpg" alt="" class="img-fluid">
-                            </figure>  
-                        </div>
-                        <div class="services_box_content">
-                            <h3>Asesoría Fiscal Estratégica</h3>
-                            <p class="text-size-14">
-                                Planifica y optimiza tu carga fiscal sin riesgos. Te ayudamos a cumplir con tus obligaciones ante el SAT mientras maximizas tus beneficios legales.
-                            </p>
-                            <a href="services.html" class="btn btn-primary mt-2">Conoce más</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Servicio 3 -->
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12">
-                    <div class="services_box">
-                        <div class="services_image">
-                            <figure class="mb-0">
-                                <img src="assets/images/services_3.jpg" alt="" class="img-fluid">
-                            </figure>  
-                        </div>
-                        <div class="services_box_content">
-                            <h3>Nómina y Cumplimiento IMSS</h3>
-                            <p class="text-size-14">
-                                Gestiona tu nómina y obligaciones ante el IMSS con total tranquilidad. Nos encargamos del timbrado, reportes y cumplimiento regulatorio.
-                            </p>
-                            <a href="services.html" class="btn btn-primary mt-2">Descubre cómo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="container">
+    <div class="services_wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="services_content text-center">
+            <figure class="mb-0 zero_two">
+              <img src="assets/images/02.png" alt="" class="img-fluid">
+            </figure>
+            <h5>Nuestros servicios contables y fiscales</h5>
+            <h2>Soluciones integrales que combinan precisión técnica, cumplimiento normativo y estrategia financiera para empresas y personas físicas.</h2>
+          </div>
         </div>
-        <figure class="mb-0 services_shape left_right_shape position-absolute">
-            <img src="assets/images/services_shape.png" alt="" class="img-fluid">
-        </figure>
+      </div>
+
+      <!--Carrusel Swiper -->
+      <div class="swiper myServicesSwiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <div class="services_box">
+              <div class="services_image">
+                <img src="assets/images/services_1.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="services_box_content">
+                <h3>Contabilidad Integral</h3>
+                <p>Control contable preciso y reportes claros que impulsan decisiones estratégicas y cumplimiento fiscal.</p>
+                <a href="services.html" class="service-btn">Ver más</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="services_box">
+              <div class="services_image">
+                <img src="assets/images/services_2.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="services_box_content">
+                <h3>Asesoría Fiscal</h3>
+                <p>Estrategias fiscales personalizadas que optimizan tus impuestos y garantizan cumplimiento ante el SAT.</p>
+                <a href="services.html" class="service-btn">Leer más</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="services_box">
+              <div class="services_image">
+                <img src="assets/images/services_3.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="services_box_content">
+                <h3>Nómina y Recursos Humanos</h3>
+                <p>Gestión eficiente de nómina y personal con cumplimiento ante IMSS, INFONAVIT y SAT.</p>
+                <a href="services.html" class="service-btn">Conocer más</a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <div class="services_box">
+              <div class="services_image">
+                <img src="assets/images/services_3.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="services_box_content">
+                <h3>Auditoría y Cumplimiento</h3>
+                <p>Auditorías contables y fiscales que fortalecen la confianza y transparencia de tu negocio.</p>
+                <a href="services.html" class="service-btn">Explorar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 5-->
+          <div class="swiper-slide">
+            <div class="services_box">
+              <div class="services_image">
+                <img src="assets/images/services_3.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="services_box_content">
+                <h3>Finanzas Sustentables</h3>
+                <p>Estrategias financieras sostenibles que equilibran rentabilidad, crecimiento y responsabilidad ambiental.</p>
+                <a href="services.html" class="service-btn">Explorar</a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 6 -->
+          <div class="swiper-slide">
+            <div class="services_box">
+              <div class="services_image">
+                <img src="assets/images/services_3.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="services_box_content">
+                <h3>Vigilancia SAT / Cumplimiento IMSS</h3>
+                <p>Monitoreo continuo de obligaciones fiscales y laborales para prevenir riesgos y sanciones.</p>
+                <a href="services.html" class="service-btn">Saber más</a>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 7 -->
+          <div class="swiper-slide">
+            <div class="services_box">
+              <div class="services_image">
+                <img src="assets/images/services_3.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="services_box_content">
+                <h3>Constitución de Sociedades</h3>
+                <p>Asesoría integral para crear tu empresa con estructura fiscal y legal sólida desde el inicio.</p>
+                <a href="services.html" class="service-btn">Descubrir</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <!-- Controles -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </div>
+  </div>
 </section>
 
-<!-- CASE STUDIES SECTION -->
+
 
 <!-- CHOOSE US SECTION -->
 <section class="choose_us_section">
@@ -345,14 +399,14 @@
                         <img src="assets/images/04.png" alt="" class="img-fluid">
                     </figure>
                     <h5>¿Por qué elegir a Eco Estrategia?</h5>
-                    <h2>“Más que un despacho contable, somos tu aliado para mantener tu empresa sólida, ordenada y en cumplimiento.”</h2>
+                    <h2>Más que un despacho contable, somos tu aliado estratégico para mantener tu empresa sólida, ordenada y en cumplimiento.</h2>
                     <div class="box_wrapper box_wrapper1">
                         <div class="box mb-0">
                             <figure>
                                 <img src="assets/images/choose_left_box_shape.png" alt="" class="img-fluid">
                             </figure>
                             <div class="box_content">
-                                <h2 class="counter"> +15</h2>
+                                <h2 class="counter">15</h2>
                                 <p class="mb-0">años de experiencia acompañando empresas mexicanas</p>
                             </div>
                             
@@ -373,7 +427,7 @@
                                 <img src="assets/images/choose_left_box_shape.png" alt="" class="img-fluid">
                             </figure>
                             <div class="box_content">
-                                <h2 class="counter">+500 </h2>
+                                <h2 class="counter">+500</h2>
                                 <p class="mb-0">declaraciones gestionadas con éxito</p>
                             </div>
                         </div>
@@ -383,7 +437,7 @@
                             </figure>
                             <div class="box_content">
                                 <h2 class="counter">100</h2>
-                                <p class="mb-0">% de cumplimiento normativo</p>
+                                <p class="mb-0"> % de cumplimiento normativo</p>
                             </div>
                         </div>
                     </div>
@@ -391,17 +445,17 @@
             </div>
             <div class="col-lg-7 col-md-12 col-sm-12 col-12">
                 <div class="right_box_wrapper">
+                    <h5>Razones para confiar en nosotros </h5>
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="choose_us_right_box">
-                                <h2>¿Por qué elegirnos?</h2>
                                 <div class="right_image_wrapper float-left">
                                     <figure class="mb-0">
                                         <img class="img-fluid" src="assets/images/choose_us_image1.png" alt="">
                                     </figure>
                                 </div>
                                 <div class="text_wrapper">
-                                    <h4> Enfoque Estratégico y Preventivo</h4>
+                                    <h4>Enfoque Estratégico y Preventivo</h4>
                                     <p class="text-size-14 mb-0">Anticipamos riesgos y diseñamos estrategias fiscales y contables que fortalecen tu negocio desde la raíz.</p>
                                 </div>
                             </div>
@@ -447,7 +501,7 @@
     </div>
 </section>
 <!-- PROFESSIONAL TEAM SECTION -->
-<section class="professional_team_section">
+<!--section class="professional_team_section">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
@@ -544,9 +598,9 @@
             </div>
         </div>
     </div>
-</section>
+</section-->
 <!-- QUESTION ANSWERS SECTION -->
-<section class="questionnaire_section">
+<!--section class="questionnaire_section">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 col-12" data-aos="fade-right">
@@ -627,9 +681,9 @@
             <img class="img-fluid" src="assets/images/questionnaire_bottom_shape.png" alt="">
         </figure>
     </div>
-</section>
+</section-->
 <!-- GET IN TOUCH SECTION -->
-<section class="get_in_touch_section position-relative" id="get_quote">
+<!--section class="get_in_touch_section position-relative" id="get_quote">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-5 col-md-12 col-sm-12 col-12 order-lg-1 order-2">
@@ -697,9 +751,9 @@
             <img src="assets/images/get_a_quote.png" alt="" class="img-fluid">
         </figure>
     </div>
-</section>
+</section-->
 <!-- ARTICLES SECTION -->
-<section class="articles_section">
+<!--section class="articles_section">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
@@ -787,7 +841,7 @@
             </div>
         </div>
     </div>
-</section>
+</section-->
 <!-- TESTIMONIAL SECTION -->
 <section class="testimonial_section position-relative">
     <div class="container">
@@ -797,8 +851,8 @@
                     <figure class="mb-0 zero_nine">
                         <img src="assets/images/09.png" alt="" class="img-fluid">
                     </figure>
-                    <h5>Our Testimonial</h5>
-                    <h2>Our Client Reviews</h2>
+                    <h5>Lo que dicen nuestros clientes</h5>
+                    <h2>La confianza se construye con resultados. Estas son algunas experiencias de empresas que hoy crecen con nosotros.</h2>
                 </div>
             </div>
         </div>
@@ -820,12 +874,12 @@
                                             <figure class="apostrophy">
                                                 <img src="assets/images/testimonial_apostrophy.png" alt="" class="img-fluid">
                                             </figure>
-                                            <p class="text-size-14 text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <p class="text-size-14 text">“Antes de trabajar con Eco Estrategia teníamos constantes retrasos en reportes fiscales. Su equipo ordenó todo nuestro sistema contable y ahora operamos con total confianza ante el SAT.”</p>
                                             <figure class="mb-0 content_shape">
                                                 <img src="assets/images/testimonial_content_shape.png" alt="" class="img-fluid">
                                             </figure>
-                                            <h4>Ann Peterson</h4>
-                                            <p class="text-size-14 mb-0">Lorum Ipsum Dolar</p>
+                                            <h4>Construcción</h4>
+                                            <p class="text-size-14 mb-0">Javier Medina, Director General, Grupo Construfix S.A. de C.V.</p>
                                             <ul class="list-unstyled mb-0">
                                                 <li><i class="fa-solid fa-star"></i></li>
                                                 <li><i class="fa-solid fa-star"></i></li>
@@ -849,12 +903,99 @@
                                             <figure class="apostrophy">
                                                 <img src="assets/images/testimonial_apostrophy.png" alt="" class="img-fluid">
                                             </figure>
-                                            <p class="text-size-14 text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <p class="text-size-14 text">“Nos ayudaron a identificar deducciones y créditos fiscales que no aprovechábamos. El ahorro anual fue notable y, sobre todo, ahora entendemos cada cifra.”</p>
                                             <figure class="mb-0 content_shape">
                                                 <img src="assets/images/testimonial_content_shape.png" alt="" class="img-fluid">
                                             </figure>
-                                            <h4>Ann Peterson</h4>
-                                            <p class="text-size-14 mb-0">Lorum Ipsum Dolar</p>
+                                            <h4>Manufactura</h4>
+                                            <p class="text-size-14 mb-0">Karla López, Gerente Financiera, Metalmecánica Hidalgo</p>
+                                            <ul class="list-unstyled mb-0">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <figure class="left_image mb-0">
+                                            <img src="assets/images/testimonial_2.jpg" alt="" class="img-fluid">
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-8 col-md-6 col-sm-6 col-12">
+                                        <div class="testimonial_box_content">
+                                            <figure class="apostrophy">
+                                                <img src="assets/images/testimonial_apostrophy.png" alt="" class="img-fluid">
+                                            </figure>
+                                            <p class="text-size-14 text">“La asesoría de Eco Estrategia me permitió pasar de una contabilidad reactiva a una planeación estratégica. Hoy puedo enfocarme en mi negocio con total tranquilidad.”</p>
+                                            <figure class="mb-0 content_shape">
+                                                <img src="assets/images/testimonial_content_shape.png" alt="" class="img-fluid">
+                                            </figure>
+                                            <h4>Servicios Profesionales</h4>
+                                            <p class="text-size-14 mb-0">KAlejandro Ruiz, Consultor Independiente</p>
+                                            <ul class="list-unstyled mb-0">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <figure class="left_image mb-0">
+                                            <img src="assets/images/testimonial_2.jpg" alt="" class="img-fluid">
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-8 col-md-6 col-sm-6 col-12">
+                                        <div class="testimonial_box_content">
+                                            <figure class="apostrophy">
+                                                <img src="assets/images/testimonial_apostrophy.png" alt="" class="img-fluid">
+                                            </figure>
+                                            <p class="text-size-14 text">“Su equipo nos acompaña en cada declaración y trámite con el IMSS. Han sido clave para mantenernos al día y evitar errores que antes costaban tiempo y dinero.”</p>
+                                            <figure class="mb-0 content_shape">
+                                                <img src="assets/images/testimonial_content_shape.png" alt="" class="img-fluid">
+                                            </figure>
+                                            <h4>Comercio</h4>
+                                            <p class="text-size-14 mb-0">Mariana Torres, Administradora, Distribuidora Arcos del Valle/p>
+                                            <ul class="list-unstyled mb-0">
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                                <li><i class="fa-solid fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-12">
+                                        <figure class="left_image mb-0">
+                                            <img src="assets/images/testimonial_2.jpg" alt="" class="img-fluid">
+                                        </figure>
+                                    </div>
+                                    <div class="col-lg-8 col-md-6 col-sm-6 col-12">
+                                        <div class="testimonial_box_content">
+                                            <figure class="apostrophy">
+                                                <img src="assets/images/testimonial_apostrophy.png" alt="" class="img-fluid">
+                                            </figure>
+                                            <p class="text-size-14 text">“Encontramos en Eco Estrategia un socio que entiende los retos de una empresa en crecimiento. Sus reportes son claros, puntuales y nos permiten tomar decisiones rápidas.”</p>
+                                            <figure class="mb-0 content_shape">
+                                                <img src="assets/images/testimonial_content_shape.png" alt="" class="img-fluid">
+                                            </figure>
+                                            <h4> Tecnología</h4>
+                                            <p class="text-size-14 mb-0">Ricardo Salas, Cofundador, TechNova Digital</p>
                                             <ul class="list-unstyled mb-0">
                                                 <li><i class="fa-solid fa-star"></i></li>
                                                 <li><i class="fa-solid fa-star"></i></li>
@@ -878,12 +1019,12 @@
                                             <figure class="apostrophy">
                                                 <img src="assets/images/testimonial_apostrophy.png" alt="" class="img-fluid">
                                             </figure>
-                                            <p class="text-size-14 text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                            <p class="text-size-14 text">“Siempre cumplen con precisión y empatía. Nos explican cada movimiento fiscal en un lenguaje que entendemos, algo que pocos despachos logran.”</p>
                                             <figure class="mb-0 content_shape">
                                                 <img src="assets/images/testimonial_content_shape.png" alt="" class="img-fluid">
                                             </figure>
-                                            <h4>Ann Peterson</h4>
-                                            <p class="text-size-14 mb-0">Lorum Ipsum Dolar</p>
+                                            <h4>Educación</h4>
+                                            <p class="text-size-14 mb-0">Laura Hernández, Directora Administrativa, Colegio Ameyal</p>
                                             <ul class="list-unstyled mb-0">
                                                 <li><i class="fa-solid fa-star"></i></li>
                                                 <li><i class="fa-solid fa-star"></i></li>
@@ -918,6 +1059,24 @@
         </figure>
     </div>
 </section>
+<!-- CTA FINAL / CONTACTO DIRECTO -->
+<section class="cta_section py-5 position-relative">
+    <div class="container text-center">
+        <div class="cta_content" data-aos="fade-up">
+            <h2>Hablemos de cómo optimizar la contabilidad de tu empresa</h2>
+            <p class="mt-3 mb-4 text-size-16">
+                En <strong>Eco Estrategia</strong> te ayudamos a tener claridad financiera, cumplir sin errores y planificar con visión estratégica.<br>
+                Da el primer paso hacia una gestión contable más ordenada y rentable.
+            </p>
+            <div class="cta_buttons">
+                <a href="contact.html" class="btn btn-primary me-2"> Agendar diagnóstico contable gratuito</a>
+                <a href="https://wa.me/521XXXXXXXXXX" target="_blank" class="btn btn-outline-primary"> Habla con un asesor ahora</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
 <!-- FOOTER -->
 <section class="footer-section position-relative">
     <div class="container">
@@ -986,7 +1145,33 @@
 <script src="../../unpkg.com/aos%402.3.1/dist/aos.js"></script>
 <script src="assets/js/counter.js"></script>
 <script src="assets/js/animation.js"></script>
+<!-- Inicialización del carrusel Swiper -->
+<script>
+  const swiper = new Swiper('.myServicesSwiper', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 3 }
+    }
+  });
+</script>
+
 </body>
+
 
 <!-- Mirrored from html.designingmedia.com/syntax/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Oct 2025 22:39:14 GMT -->
 </html>
