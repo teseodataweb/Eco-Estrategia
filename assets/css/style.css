@@ -3031,4 +3031,548 @@ footer, .footer, .site-footer {
     display: none;
   }
 }
+/* ================================
+   MÓDULO 3 – CTA INTERMEDIO
+   ================================ */
+.cta-intermedio {
+  background: linear-gradient(135deg, var(--e-global-color-soft-violet), var(--e-global-color-primary));
+  color: var(--e-global-color-white);
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin: 60px 0;
+  border-radius: 16px;
+}
+
+/* Fondos decorativos */
+.cta-intermedio::before,
+.cta-intermedio::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+  opacity: 0.15;
+}
+
+.cta-intermedio::before {
+  width: 200px;
+  height: 200px;
+  background-color: var(--e-global-color-accent);
+  top: -50px;
+  left: -50px;
+}
+
+.cta-intermedio::after {
+  width: 300px;
+  height: 300px;
+  background-color: var(--e-global-color-white);
+  bottom: -100px;
+  right: -100px;
+}
+
+.cta-intermedio-container {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cta-intermedio-content h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--e-global-color-white);
+}
+
+.cta-intermedio-content p {
+  font-size: 1.1rem;
+  color: var(--e-global-color-white);
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.cta-intermedio-btn .cta-btn {
+  background-color: var(--e-global-color-secondary);
+  color: var(--e-global-color-white);
+  padding: 15px 35px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(161, 100, 255, 0.4);
+}
+
+.cta-intermedio-btn .cta-btn:hover {
+  background-color: var(--e-global-color-white);
+  color: var(--e-global-color-secondary);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cta-intermedio-content h2 {
+    font-size: 1.8rem;
+  }
+  .cta-intermedio-content p {
+    font-size: 1rem;
+  }
+}
+/* ================================
+   MÓDULO 4 – BLOQUE DE CONFIANZA
+   ================================ */
+.bloque-confianza {
+  background-color: var(--e-global-color-white);
+  color: var(--e-global-color-mostly-black);
+  padding: 80px 20px;
+  margin: 60px 0;
+  border-radius: 16px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+}
+
+.bloque-confianza-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bloque-confianza-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.bloque-confianza-header h2 {
+  font-size: 2.3rem;
+  color: var(--e-global-color-primary);
+  margin-bottom: 15px;
+}
+
+.bloque-confianza-header p {
+  font-size: 1.1rem;
+  color: var(--e-global-color-dark-grayish);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Cuerpo principal */
+.bloque-confianza-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  align-items: start;
+}
+
+/* Columna izquierda */
+.bloque-confianza-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bloque-confianza-left li {
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+  background-color: var(--e-global-color-soft-violet);
+  color: var(--e-global-color-white);
+  padding: 18px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(161, 100, 255, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.bloque-confianza-left li:hover {
+  transform: translateY(-4px);
+}
+
+.bloque-confianza-left .numero {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--e-global-color-white);
+  margin-right: 10px;
+}
+
+/* Columna derecha */
+.bloque-confianza-right .valor {
+  margin-bottom: 25px;
+  background-color: var(--e-global-color-very-dark-violet);
+  color: var(--e-global-color-white);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(15, 2, 35, 0.25);
+  transition: all 0.3s ease;
+}
+
+.bloque-confianza-right .valor:hover {
+  background-color: var(--e-global-color-soft-violet);
+  transform: translateY(-4px);
+}
+
+.bloque-confianza-right h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--e-global-color-white);
+}
+
+.bloque-confianza-right p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--e-global-color-white);
+}
+
+/* Claim final */
+.bloque-confianza-footer {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.bloque-confianza-footer h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--e-global-color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bloque-confianza-header h2 {
+    font-size: 1.8rem;
+  }
+  .bloque-confianza-left li {
+    font-size: 1rem;
+  }
+  .bloque-confianza-right h3 {
+    font-size: 1.1rem;
+  }
+}
+/* ================================
+   BOTONES CASE STUDIES SECTION (ajustado)
+   ================================ */
+.case_buttons {
+  margin-top: 30px; /* espacio desde el texto morado */
+  margin-bottom: 25px; /* espacio antes de la imagen */
+  display: flex;
+  justify-content: center; /* centrado horizontal */
+  flex-wrap: wrap;
+  gap: 18px; /* separación entre botones */
+}
+
+.btn-primary-eco,
+.btn-outline-eco {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Botón principal */
+.btn-primary-eco {
+  background-color: var(--e-global-color-secondary);
+  color: var(--e-global-color-white);
+  box-shadow: 0 4px 12px rgba(161, 100, 255, 0.3);
+}
+
+.btn-primary-eco:hover {
+  background-color: var(--e-global-color-soft-violet);
+  box-shadow: 0 6px 18px rgba(161, 100, 255, 0.45);
+  transform: translateY(-2px);
+}
+
+/* Botón secundario (contorno) */
+.btn-outline-eco {
+  border: 2px solid var(--e-global-color-secondary);
+  color: var(--e-global-color-secondary);
+  background-color: transparent;
+}
+
+.btn-outline-eco:hover {
+  background-color: var(--e-global-color-secondary);
+  color: var(--e-global-color-white);
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .case_buttons {
+    justify-content: center;
+    margin-top: 25px;
+  }
+}
+/* ================================
+   ABOUT COMPANY SECTION (degradado morado suave)
+   ================================ */
+.aboutus_company_section {
+  background: linear-gradient(
+    180deg,
+    rgba(195, 167, 237, 0.18) 0%,   /* morado base con transparencia */
+    rgba(142, 121, 181, 0.12) 40%,  /* lavanda claro intermedio */
+    rgba(156, 107, 144, 0.9) 100%   /* difuminado hacia blanco */
+  );
+  position: relative;
+  z-index: 1;
+  transition: background 0.4s ease-in-out;
+}
+
+/* Asegura que las imágenes conserven su estilo */
+.aboutus_company_section .about_company_images img {
+  border-radius: 12px;
+}
+
+/* Caja de contenido con efecto ligero de profundidad */
+.aboutus_company_section .about_company_content {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(161, 100, 255, 0.08);
+}
+/* ================================
+   MÓDULO 5 – CERTIFICACIONES Y ALIANZAS
+   ================================ */
+.certificaciones_section {
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f6f2ff 100%
+  );
+  background-image: radial-gradient(
+    circle at 20% 20%,
+    rgba(161, 100, 255, 0.06) 0%,
+    transparent 70%
+  );
+  padding: 80px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.certificaciones_section h2 {
+  color: #4b2bb3;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.certificaciones_section p {
+  color: var(--e-global-color-mostly-black);
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+/* ✅ 3 arriba - 3 abajo */
+.certificaciones_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+/* ✅ CUADROS DEL MISMO TAMAÑO EXACTO */
+.cert_item {
+  width: 260px;    /* ✅ tamaño fijo del cuadro */
+  height: 200px;   /* ✅ tamaño fijo del cuadro */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.cert_item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(161, 100, 255, 0.15);
+}
+
+/* ✅ Logos del mismo tamaño */
+.cert_item img {
+  width: 70px;
+  height: 50px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.cert_item:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* ✅ Texto */
+.cert_item p {
+  margin-top: 10px;
+  font-weight: 600;
+  color: var(--e-global-color-very-dark-gray);
+  font-size: 15px;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .certificaciones_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .certificaciones_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.cert_item img {
+  width: auto;
+  height: 190px; /* ajusta este valor hasta que quedes satisfecha */
+  object-fit: contain;
+}
+/* ================================
+   MÓDULO 1 – HERO / INTRODUCCIÓN CONTACTO
+   ================================ */
+.hero_intro_section {
+  background: linear-gradient(135deg, #d5d0e6 0%, #d6d1e1 50%, #cdc9cd 100%);
+  color: #1a093b;
+  padding: 130px 0 110px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Elementos decorativos */
+.hero_shape_circle {
+  position: absolute;
+  top: -60px;
+  right: -120px;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(155, 90, 255, 0.15) 0%, transparent 70%);
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.hero_shape_dots {
+  position: absolute;
+  bottom: 50px;
+  left: 60px;
+  width: 140px;
+  height: 140px;
+  background-image: radial-gradient(rgba(155, 90, 255, 0.1) 1px, transparent 1px);
+  background-size: 12px 12px;
+  z-index: 0;
+}
+
+/* Contenido principal */
+.hero_content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero_content h1 {
+  font-weight: 800;
+  font-size: 3rem;
+  color: #3a1c85;
+  margin-bottom: 25px;
+}
+
+.hero_content p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #463d5f;
+  margin-bottom: 40px;
+  max-width: 540px;
+}
+
+/* Botones */
+.hero_buttons {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.btn_hero_primary {
+  background: linear-gradient(90deg, #7a4cff, #9a72ff);
+  color: #fff;
+  padding: 14px 34px;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(122, 76, 255, 0.25);
+}
+
+.btn_hero_primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(122, 76, 255, 0.35);
+}
+
+.btn_hero_secondary {
+  background: #fff;
+  border: 2px solid #9a72ff;
+  color: #7a4cff;
+  padding: 14px 34px;
+  border-radius: 40px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn_hero_secondary:hover {
+  background: #9a72ff;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Caja de imagen */
+.hero_image_box {
+  position: relative;
+  background: #fff;
+  border-radius: 30px;
+  padding: 25px;
+  box-shadow: 0 15px 40px rgba(155, 90, 255, 0.1);
+  display: inline-block;
+  z-index: 1;
+}
+
+.hero_image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.4s ease;
+}
+
+.hero_image img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsividad */
+@media (max-width: 991px) {
+  .hero_content h1 {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+  .hero_content p {
+    text-align: center;
+    margin: 0 auto 30px;
+  }
+  .hero_buttons {
+    justify-content: center;
+  }
+  .hero_image_box {
+    margin-top: 40px;
+  }
+}
+
+.form_footer_text p {
+  font-size: 15px;
+  color: #6a6a6a;
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
 
