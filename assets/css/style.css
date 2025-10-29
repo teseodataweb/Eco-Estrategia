@@ -3428,14 +3428,14 @@ footer, .footer, .site-footer {
 }
 .cert_item img {
   width: auto;
-  height: 190px; /* ajusta este valor hasta que quedes satisfecha */
+  height: 200px; /* ajusta este valor hasta que quedes satisfecha */
   object-fit: contain;
 }
 /* ================================
    MÓDULO 1 – HERO / INTRODUCCIÓN CONTACTO
    ================================ */
 .hero_intro_section {
-  background: linear-gradient(135deg, #d5d0e6 0%, #d6d1e1 50%, #cdc9cd 100%);
+  background: linear-gradient(135deg, #d5d0e6 0%, #ebeaef 50%, #fdecfe 100%);
   color: #1a093b;
   padding: 130px 0 110px;
   position: relative;
@@ -3576,3 +3576,146 @@ footer, .footer, .site-footer {
   line-height: 1.6;
 }
 
+/* Igualar tamaño de los cuadros y centrar el contenido */
+.contact_detail_section .contact_detail_box_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra verticalmente */
+  align-items: center; /* centra horizontalmente */
+  text-align: center;
+  height: 100%;
+  min-height: 240px; /* puedes ajustar este valor según tu diseño */
+  padding: 25px 20px;
+  box-sizing: border-box;
+}
+
+/* Hace que todas las columnas se alineen correctamente */
+.contact_detail_section .row[data-aos="fade-up"] {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+/* Ajustar los textos dentro de los cuadros */
+.contact_detail_section h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact_detail_section p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  max-width: 220px;
+}
+
+/* Centrar la imagen en la parte inferior del cuadro */
+.contact_detail_section .figure_wrapper {
+  margin-top: 10px;
+}
+
+.contact_detail_section .figure_wrapper img {
+  max-width: 60px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+/* Ajuste de los logos en los cuadros de contacto */
+.contact_detail_section .figure_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px; /* altura uniforme del contenedor del logo */
+  width: 100%;
+  margin-top: 15px;
+}
+
+.contact_detail_section .figure_wrapper img {
+  max-width: 60px; /* tamaño máximo del logo */
+  max-height: 60px;
+  object-fit: contain; /* mantiene proporciones sin deformar */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.9;
+}
+
+/* Pequeño efecto visual al pasar el cursor */
+.contact_detail_section .figure_wrapper img:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+/* --- VISIT OR MEETING SECTION Visítanos o agenda --- */
+.visit_meeting_section {
+  background: linear-gradient(135deg, #f4f0ff 0%, #ece4ff 100%);
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.visit_meeting_section .section_header h2 {
+  color: #4b2bb3;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.visit_meeting_section .section_description {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  color: #555;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.visit_meeting_section .visit_block {
+  background: #fff;
+  border-radius: 20px;
+  padding: 35px 25px;
+  text-align: center;
+  box-shadow: 0 8px 18px rgba(75, 43, 179, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.visit_meeting_section .visit_block:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(75, 43, 179, 0.15);
+}
+
+.visit_meeting_section .icon_wrapper {
+  background: #e8e0ff;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+  font-size: 32px;
+  color: #4b2bb3;
+}
+
+.visit_meeting_section h4 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.visit_meeting_section p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.visit_meeting_section .btn_agendar {
+  background-color: #4b2bb3;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.visit_meeting_section .btn_agendar:hover {
+  background-color: #36208a;
+  transform: scale(1.05);
+}
