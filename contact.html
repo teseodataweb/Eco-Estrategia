@@ -186,81 +186,46 @@
 </section>
 
 <!-- CONTACT FORM SECTION -->
-<!-- CONTACT FORM SECTION -->
-<section class="contact_form_section">
+<section class="contact-section">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-        <div class="contact_form_content">
-          <h2>Agenda tu diagnóstico gratuito</h2>
-        </div>
-      </div>
-    </div>
-
-    <form id="contactpage" method="POST" action="https://html.designingmedia.com/syntax/contact-form.php" data-aos="fade-up">
+    <h2 class="contact-title">Agenda tu diagnóstico gratuito</h2>
+    <h2 class="contact-title"></h2>
+    <form class="contact-form">
       <div class="row">
-        <!-- Nombre completo -->
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-          <div class="form-group mb-0">  
-            <input type="text" name="fname" id="name" class="form-control" placeholder="Nombre completo">
-            <i class="fa-solid fa-user"></i>
-          </div>
+        <div class="col-md-6 mb-3">
+          <input type="text" class="form-control" placeholder="Nombre completo" required>
         </div>
-
-        <!-- Empresa o razón social -->
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-          <div class="form-group mb-0">  
-            <input type="text" name="company" id="company" class="form-control" placeholder="Empresa o razón social">
-            <i class="fa-solid fa-building"></i>
-          </div>
+        <div class="col-md-6 mb-3">
+          <input type="text" class="form-control" placeholder="Empresa o razón social" required>
         </div>
-
-        <!-- Correo electrónico -->
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-          <div class="form-group mb-0">  
-            <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Correo electrónico">
-            <i class="fa-solid fa-envelope"></i>
-          </div>
+        <div class="col-md-6 mb-3">
+          <input type="email" class="form-control" placeholder="Correo electrónico" required>
         </div>
-
-        <!-- Teléfono -->
-        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-          <div class="form-group mb-0">  
-            <input type="tel" name="phone" id="phoneno" class="form-control" placeholder="Teléfono">
-            <i class="fa-solid fa-phone-volume"></i>
-          </div>
+        <div class="col-md-6 mb-3">
+          <input type="tel" class="form-control" placeholder="Teléfono" required>
         </div>
-
-        <!-- Servicio de interés -->
-        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-          <div class="form-group mb-0">  
-            <input type="text" name="service" id="service" class="form-control" placeholder="Servicio de interés">
-            <i class="fa-solid fa-briefcase"></i>
-          </div>
+        <div class="col-12 mb-3">
+          <input type="text" class="form-control" placeholder="Servicio de interés" required>
         </div>
-
-        <!-- Mensaje -->
-        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
-          <div class="form-group mb-0">    
-            <textarea class="form_style" placeholder="Mensaje breve" rows="3" name="comments" id="msg"></textarea>
-            <i class="send fa-solid fa-paper-plane"></i>
-          </div>
+        <div class="col-12 mb-3">
+          <textarea class="form-control" rows="4" placeholder="Mensaje breve"></textarea>
         </div>
       </div>
 
-      <!-- Botón -->
-      <div class="form_button_wrapper position-relative">
-        <button type="submit">ENVIAR</button>
-        <figure class="mb-0 white_arrow"><img src="assets/images/arrow_right.png" alt="" class="img-fluid"></figure>
+      <div class="form-check text-center mb-4">
+        <input class="form-check-input" type="checkbox" id="terms" required>
+        <label class="form-check-label" for="terms">
+          Acepto los <a href="#">términos y condiciones</a> y las <a href="#">Políticas de privacidad</a>.
+        </label>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn-submit">ENVIAR</button>
       </div>
     </form>
-
-    <!-- Texto debajo del formulario -->
-    <div class="form_footer_text text-center mt-3">
-      <p>Toda la información que compartas será tratada de manera confidencial y usada exclusivamente para atender tu solicitud.</p>
-    </div>
   </div>
 </section>
+
 
 
 <!-- CONTACT DETAIL SECTION -->
@@ -384,42 +349,13 @@
 </section-->
 <!-- VISIT OR MEETING SECTION -->
 <section class="visit_meeting_section position-relative">
-  <div class="container">
-    <div class="section_header text-center">
-      <h2>Visítanos o agenda una reunión</h2>
-      <p class="section_description">
-        Nuestro despacho está ubicado en una zona de fácil acceso en Pachuca, Hidalgo. 
-        También ofrecemos asesorías virtuales para empresas de todo el país.
-      </p>
-    </div>
-
-    <div class="row justify-content-center">
-      <!-- Bloque 1: Visítanos -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="visit_block">
-          <div class="icon_wrapper">
-            <i class="fa-solid fa-location-dot"></i>
-          </div>
-          <h4>Visítanos</h4>
-          <p>Pachuca, Hidalgo, México</p>
-        </div>
-      </div>
-
-      <!-- Bloque 2: Agenda una reunión -->
-      <div class="col-lg-4 col-md-6 col-sm-12">
-        <div class="visit_block">
-          <div class="icon_wrapper">
-            <i class="fa-solid fa-calendar-check"></i>
-          </div>
-          <h4>Asesoría Virtual</h4>
-          <p>Atendemos a empresas en todo México mediante reuniones en línea seguras y personalizadas.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="text-center mt-4">
-      <a href="#contacto" class="btn_agendar">Agendar cita</a>
-    </div>
+  <div class="container text-center">
+    <h2>Hagamos que tus números trabajen a tu favor</h2>
+    <p>
+      En Eco Estrategia transformamos la contabilidad y la fiscalidad en herramientas de crecimiento. <br>
+      Tu empresa puede operar con claridad, control y estrategia.
+    </p>
+    <a href="#contacto" class="btn_agendar">Solicitar asesoría</a>
   </div>
 </section>
 <!-- END VISIT OR MEETING SECTION -->
@@ -471,8 +407,7 @@
             <img class="img-fluid" src="assets/images/footer_shape.png" alt="">
         </figure>
     </div>
-</section>
-<!-- FOOTER BAR -->
+</section><!-- FOOTER BAR -->
 <div class="footer-bar position-relative text-center">
     <div class="container">
         <div class="row">
