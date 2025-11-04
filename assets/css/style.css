@@ -866,6 +866,69 @@ html{
   background: #fff;
   opacity: 1;
 }
+/* Hace que las tarjetas mantengan el mismo tamaño siempre */
+.myServicesSwiper .swiper-slide {
+  width: 380px !important; /* <= Ajusta el tamaño aquí */
+  display: flex;
+  justify-content: center;
+}
+
+/* La tarjeta dentro del slide debe ocupar todo el ancho */
+.services_box {
+  width: 100%;
+  height: auto;
+  background: rgba(72, 52, 121, 0.85); /* si ya tienes un fondo, ignora esto */
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Para que la imagen y el contenido no se estiren raro */
+.services_image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+/* Mantiene la tarjeta como contenedor flexible */
+.services_box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Hace que el contenido ocupe todo el espacio disponible */
+.services_box_content {
+  flex: 1; /* Empuja hacia abajo */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Deja el texto arriba */
+  text-align: center;
+}
+
+/* Asegura que el botón siempre quede abajo dentro de la tarjeta */
+.services_box_content .service-btn {
+  margin-top: auto; /* Lo empuja al final */
+  align-self: center;
+  margin-bottom: 50px; /* Lo subimos un poco para que no quede escondido */
+}
+.services_box {
+  min-height: 500px; /* Ajusta según tu diseño */
+}
+.services_image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.myServicesSwiper {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.myServicesSwiper.swiper-initialized {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 
 .case_studies_section {
@@ -4106,4 +4169,71 @@ textarea.form-control {
     grid-template-columns: 1fr;
   }
 }
+/* ================================
+   MÓDULO 3 – TESTIMONIOS (ajustado)
+================================ */
+.modulo-testimonios {
+  background: linear-gradient(135deg, #8a5cf6 0%, #432b7a 100%);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px 100px; /* 🔹 Menor espacio arriba */
+  border-radius: 0 0 50px 50px;
+  position: relative;
+  overflow: hidden;
+  margin-top: -20px; /* 🔹 Une visualmente con el bloque anterior */
+}
+
+.titulo-testimonios {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 40px; /* 🔹 Ajuste más equilibrado */
+}
+
+.bloques-testimonios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.bloque-testimonio {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 30px 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bloque-testimonio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.texto-testimonio {
+  font-size: 1rem;
+  font-style: italic;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.autor-testimonio {
+  font-weight: 600;
+  color: #dcd2ff;
+  font-size: 0.9rem;
+}
+/* Aplica solo cuando el módulo de testimonios va después de un div o sección */
+section + .modulo-testimonios,
+div + .modulo-testimonios {
+  margin-top: -60px !important; /* 🔹 puedes reducir o aumentar este valor */
+}
+/* Forzar que todas las tarjetas tengan mismo ancho que la primera */
+.myServicesSwiper .swiper-slide {
+  width: 350px !important; /* Puedes ajustar el ancho */
+  display: flex;
+  justify-content: center;
+}
+
+
 
