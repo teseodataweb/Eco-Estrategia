@@ -28,17 +28,17 @@ body {
 }
 :root {
     --e-global-color-primary: #0f0d1d;
-    --e-global-color-secondary: #a164ff;
+    --e-global-color-secondary: #5B76F8!important;
     --e-global-color-text: #000000;
-    --e-global-color-accent: #a164ff;
+    --e-global-color-accent: #71CE8A !important;
 --e-global-color-white: #ffffff;
     --e-global-color-dark-grayish: #726f84;
     --e-global-color-dark-gray: #9a9a9a;
     --e-global-color-very-dark-gray: #505050;
     --e-global-color-cool-dark-gray: #8a8a8a;
     --e-global-color-mostly-black: #121212;
-    --e-global-color-very-dark-violet: #0f0223;
-    --e-global-color-soft-violet: #9359ee;
+    --e-global-color-very-dark-violet: #0A2C6B !important;
+    --e-global-color-soft-violet: #5B76F8 !important;
 }
 h1{
     font-size: 70px;
@@ -704,7 +704,7 @@ html{
 }
 
 .services_box {
-  background-color: rgba(90, 44, 160, 0.9);
+  background-color: rgba(44, 65, 160, 0.9);
   color: white;
   border-radius: 15px;
   overflow: hidden;
@@ -721,7 +721,7 @@ html{
   display: inline-block;
   margin-top: 15px;
   padding: 10px 25px;
-  background-color: #5a2ca0;
+  background-color: #464978;
   color: #fff;
   border-radius: 25px;
   text-decoration: none;
@@ -729,23 +729,23 @@ html{
 }
 
 .service-btn:hover {
-  background-color: #7c4dff;
+  background-color: #4d77ff;
   transform: scale(1.05);
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: #5a2ca0;
+  color: #5858e9;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #5a2ca0;
+  background-color: #5B76F8;
 }
 
 .services_section .services_box .services_box_content{
     position: absolute;
     transition: all 0.3s ease-in-out;
-    background-color: #4d3b68;
+    background-color: #5B76F8;
     text-align: center;
     padding: 40px 25px 20px;
     border-radius: 10px;
@@ -798,7 +798,7 @@ html{
   justify-content: flex-start;
   height: 100%;
   min-height: 450px; /* puedes ajustar si deseas más o menos alto */
-  background-color: rgba(215, 212, 222, 0.9); /* mantiene el morado translúcido */
+  background-color: rgba(60, 121, 147, 0.9); /* mantiene el morado translúcido */
   border-radius: 15px;
   overflow: hidden;
   padding: 25px 20px;
@@ -830,7 +830,7 @@ html{
 
 /* Botón centrado */
 .service-btn {
-  background-color: #8c6bff;
+  background-color: #0A2C6B;
   color: #fff;
   padding: 10px 25px;
   border-radius: 8px;
@@ -858,7 +858,7 @@ html{
 }
 
 .myServicesSwiper .swiper-pagination-bullet {
-  background: #b89eff;
+  background: #80a0e4;
   opacity: 0.6;
 }
 
@@ -877,7 +877,7 @@ html{
 .services_box {
   width: 100%;
   height: auto;
-  background: rgba(72, 52, 121, 0.85); /* si ya tienes un fondo, ignora esto */
+  background: rgba(124, 239, 162, 0.85); /* si ya tienes un fondo, ignora esto */
   border-radius: 20px;
   overflow: hidden;
 }
@@ -928,6 +928,15 @@ html{
   visibility: visible;
   opacity: 1;
 }
+/* Cambia el morado que aparece al hacer clic o hover en las tarjetas internas */
+.services_box:hover::before,
+.services_box:active::before,
+.services_box_content:hover,
+.services_box_content:active {
+  background-color: rgba(92, 162, 235, 0.8) !important; /* azul bajito */
+  transition: background-color 0.3s ease;
+}
+
 
 
 
@@ -2339,7 +2348,7 @@ textarea {
 
 /* Botón morado original y texto centrado */
 .btn-submit {
-  background: linear-gradient(90deg, #a855f7, #8b5cf6);
+  background: linear-gradient(90deg, #71CE8A, #a2f0b6);
   color: #fff;
   font-weight: 600;
   font-size: 16px;
@@ -2373,7 +2382,7 @@ textarea.form-control {
 
 /* Alineación del texto de términos */
 .form-check-label a {
-  color: #a855f7;
+  color: #5B76F8;
   text-decoration: none;
 }
 
@@ -2850,7 +2859,7 @@ textarea.form-control {
 }
 
 .cta_content h2 {
-  color: #3a247f;
+  color:  #71CE8A;
   font-weight: 700;
   font-size: 2rem;
 }
@@ -2880,29 +2889,29 @@ textarea.form-control {
 
 /* Botón principal con efecto de profundidad y degradado */
 .cta_buttons .btn-primary {
-  background: linear-gradient(90deg, #7c3aed 0%, #9f67ff 100%);
+  background: linear-gradient(90deg, #215888 0%, #5B76F8 100%);
   border: none;
   color: #fff;
-  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.4);
+  box-shadow: 0 4px 12px rgba(58, 112, 237, 0.4);
 }
 
 .cta_buttons .btn-primary:hover {
-  background: linear-gradient(90deg, #6a29d9 0%, #8b50ff 100%);
+  background: linear-gradient(90deg, #215888 0%, #5B76F8  100%);
   transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(124, 58, 237, 0.5);
+  box-shadow: 0 6px 16px rgba(58, 112, 237, 0.4);
 }
 
 /* Botón secundario con borde animado */
 .cta_buttons .btn-outline-primary {
-  border: 2px solid #7c3aed;
-  color: #7c3aed;
+  border: 2px solid #5B76F8;
+  color: #215888;
   background-color: transparent;
 }
 
 .cta_buttons .btn-outline-primary:hover {
-  background: #7c3aed;
+  background: #5B76F8;
   color: #fff;
-  box-shadow: 0 4px 10px rgba(124, 58, 237, 0.4);
+  box-shadow: 0 4px 10px rgba(58, 112, 237, 0.4);
   transform: translateY(-3px);
 }
 
@@ -2982,12 +2991,12 @@ textarea.form-control {
   position: relative;
   z-index: 2;
   display: inline-block;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.943);
   backdrop-filter: blur(10px);
   padding: 70px 80px;
   border-radius: 32px;
   box-shadow: 0 15px 50px rgba(92, 45, 145, 0.2);
-  border-left: 8px solid #5c2d91;
+  border-left: 8px solid #0A2C6B;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -2996,7 +3005,7 @@ textarea.form-control {
 .hero_blocks.hero_header.solo_texto h1 {
   font-size: 3rem;
   font-weight: 800;
-  color: #42246e;
+  color:  #71CE8A;
   margin-bottom: 25px;
   line-height: 1.3;
 }
@@ -3015,28 +3024,28 @@ textarea.form-control {
 
 /* Botón principal (lila degradado) */
 .hero_blocks.hero_header.solo_texto .btn-main {
-  background: linear-gradient(135deg, #b57ee6, #9f69d9);
+  background: linear-gradient(135deg, #5B76F8, #4959b2);
   color: #fff;
   box-shadow: 0 6px 18px rgba(159, 105, 217, 0.4);
   border: none;
 }
 
 .hero_blocks.hero_header.solo_texto .btn-main:hover {
-  background: linear-gradient(135deg, #a96de0, #8a54c7);
+  background: linear-gradient(135deg, #0A2C6B, #2f5291);
   box-shadow: 0 8px 25px rgba(159, 105, 217, 0.5);
   transform: translateY(-3px);
 }
 
 /* Botón secundario (lila claro con borde) */
 .hero_blocks.hero_header.solo_texto .btn-outline {
-  border: 2px solid #b57ee6;
-  color: #6d3ea4;
+  border: 2px solid #5B76F8;
+  color: #031538;
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(6px);
 }
 
 .hero_blocks.hero_header.solo_texto .btn-outline:hover {
-  background: linear-gradient(135deg, #b57ee6, #9f69d9);
+  background: linear-gradient(135deg, #0A2C6B, #2f5291);
   color: #fff;
   box-shadow: 0 6px 18px rgba(159, 105, 217, 0.3);
   transform: translateY(-3px);
@@ -3045,7 +3054,7 @@ textarea.form-control {
    Subtitulo lila servicios 
    ================================ */
 .subtitle-lila {
-    color: #7b5cf7; /* color lila */
+    color:  #5B76F8; /* color lila */
     font-weight: 500;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
@@ -3267,13 +3276,13 @@ textarea.form-control {
   font-size: 1.05rem;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(161, 100, 255, 0.4);
+  box-shadow: 0 4px 15px rgba(55, 82, 164, 0.4);
 }
 
 .cta-intermedio-btn .cta-btn:hover {
   background-color: var(--e-global-color-white);
   color: var(--e-global-color-secondary);
-  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 6px 20px rgba(113, 129, 221, 0.3);
   transform: translateY(-2px);
 }
 
@@ -3349,9 +3358,9 @@ textarea.form-control {
 .aboutus_company_section {
   background: linear-gradient(
     180deg,
-    rgba(220, 172, 213, 0.18) 0%,   /* morado base con transparencia */
-    rgba(148, 135, 172, 0.12) 40%,  /* lavanda claro intermedio */
-    rgba(173, 163, 170, 0.9) 100%   /* difuminado hacia blanco */
+    rgba(177, 204, 234, 0.18) 0%,   /* morado base con transparencia */
+    rgba(83, 123, 166, 0.12) 40%,  /* lavanda claro intermedio */
+    rgba(80, 125, 221, 0.9) 100%   /* difuminado hacia blanco */
   );
   position: relative;
   z-index: 1;
@@ -3391,7 +3400,7 @@ textarea.form-control {
 }
 
 .certificaciones_section h2 {
-  color: #4b2bb3;
+  color: #5B76F8;
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -3478,8 +3487,8 @@ textarea.form-control {
    MÓDULO 1 – HERO / INTRODUCCIÓN CONTACTO
    ================================ */
 .hero_intro_section {
-  background: linear-gradient(135deg, #d5d0e6 0%, #ebeaef 50%, #fdecfe 100%);
-  color: #595168;
+  background: linear-gradient(135deg, #ecebf1 0%, #f1f1f4 50%, #f9f7f9 100%);
+  color: #ffffff;
   padding: 130px 0 110px;
   position: relative;
   overflow: hidden;
@@ -3492,7 +3501,7 @@ textarea.form-control {
   right: -120px;
   width: 420px;
   height: 420px;
-  background: radial-gradient(circle, rgba(155, 90, 255, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(99, 145, 253, 0.15) 0%, transparent 70%);
   z-index: 0;
   border-radius: 50%;
 }
@@ -3517,7 +3526,7 @@ textarea.form-control {
 .hero_content h1 {
   font-weight: 800;
   font-size: 3rem;
-  color: #3a1c85;
+  color: #5B76F8;
   margin-bottom: 25px;
 }
 
@@ -3537,25 +3546,25 @@ textarea.form-control {
 }
 
 .btn_hero_primary {
-  background: linear-gradient(90deg, #7a4cff, #9a72ff);
+  background: linear-gradient(90deg, #71CE8A, #70be84);
   color: #fff;
   padding: 14px 34px;
   border-radius: 40px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 15px rgba(122, 76, 255, 0.25);
+  box-shadow: 0 5px 15px rgba(156, 235, 161, 0.25);
 }
 
 .btn_hero_primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(122, 76, 255, 0.35);
+  box-shadow: 0 8px 20px rgba(101, 245, 123, 0.35);
 }
 
 .btn_hero_secondary {
   background: #fff;
-  border: 2px solid #9a72ff;
-  color: #7a4cff;
+  border: 2px solid #71CE8A;
+  color: #71CE8A;
   padding: 14px 34px;
   border-radius: 40px;
   font-weight: 600;
@@ -3564,7 +3573,7 @@ textarea.form-control {
 }
 
 .btn_hero_secondary:hover {
-  background: #9a72ff;
+  background: #71CE8A;
   color: #fff;
   transform: translateY(-3px);
 }
@@ -3572,7 +3581,7 @@ textarea.form-control {
 /* Caja de imagen */
 .hero_image_box {
   position: relative;
-  background: #fff;
+  background: #71CE8A;
   border-radius: 30px;
   padding: 25px;
   box-shadow: 0 15px 40px rgba(155, 90, 255, 0.1);
@@ -3765,7 +3774,7 @@ textarea.form-control {
   position: relative;
   width: 100%;
   padding: 120px 20px;
-  background: linear-gradient(135deg, #8a4dff 0%, #2f1b5a 100%);
+  background: linear-gradient(135deg, #5B76F8 0%, #848ec1 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3782,7 +3791,7 @@ textarea.form-control {
   left: -150px;
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(165, 99, 255, 0.8) 0%, rgba(165, 99, 255, 0.1) 70%, transparent 100%);
+  background: radial-gradient(circle, rgba(152, 182, 217, 0.8) 0%, rgba(152, 182, 217, 0.8) 70%, transparent 100%);
   filter: blur(50px);
   border-radius: 50%;
   z-index: 1;
@@ -3796,7 +3805,7 @@ textarea.form-control {
   right: -150px;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(50, 40, 100, 0.8) 0%, rgba(50, 40, 100, 0.1) 70%, transparent 100%);
+  background: radial-gradient(circle, rgba(93, 177, 121, 0.8) 0%, rgba(50, 40, 100, 0.1) 70%, transparent 100%);
   filter: blur(60px);
   border-radius: 50%;
   z-index: 1;
@@ -3828,19 +3837,19 @@ textarea.form-control {
 /* Botón */
 .cta-btn {
   display: inline-block;
-  background: #a86cff;
+  background: #0A2C6B;
   color: #ffffff;
   font-size: 1.05rem;
   font-weight: 700;
   padding: 14px 40px;
   border-radius: 50px;
   text-decoration: none;
-  box-shadow: 0 0 25px rgba(168, 108, 255, 0.6);
+  box-shadow: 0 0 25px rgba(135, 179, 237, 0.6);
   transition: all 0.3s ease;
 }
 
 .cta-btn:hover {
-  background: #b77cff;
+  background: #5B76F8;
   box-shadow: 0 0 40px rgba(168, 108, 255, 0.8);
   transform: translateY(-2px);
 }
@@ -4038,7 +4047,7 @@ textarea.form-control {
 ================================ */
 .valores-section {
   padding: 80px 0;
-  background: linear-gradient(135deg, #9172ef, #a0829b);
+  background: linear-gradient(135deg, #71CE8A, #bbf3ca);
   position: relative;
   overflow: hidden;
 }
@@ -4114,7 +4123,7 @@ textarea.form-control {
   width: 60px;
   height: 6px;
   border-radius: 6px;
-  background: linear-gradient(90deg, #7b5cf7, #b084fc);
+  background: linear-gradient(90deg, #0A2C6B, #7da0e1);
   opacity: 0.9;
 }
 
@@ -4143,7 +4152,7 @@ textarea.form-control {
 .valor-card h4 {
   font-size: 21px;
   font-weight: 800;
-  color: #6c4ef3;
+  color: #5B76F8;
   margin-top: 35px; /* baja el texto para no chocar con la línea */
   margin-bottom: 10px;
 }
