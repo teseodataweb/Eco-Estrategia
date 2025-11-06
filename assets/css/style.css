@@ -4234,6 +4234,24 @@ div + .modulo-testimonios {
   display: flex;
   justify-content: center;
 }
+.social-icons {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #cccccc; /* gris claro al pasar el mouse */
+}
+
 
 
 
