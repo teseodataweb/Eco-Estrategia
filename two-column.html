@@ -37,6 +37,8 @@
     <link href="assets/css/special-classes.css" rel="stylesheet" type="text/css">
     <link href="../../unpkg.com/aos%402.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 
 </head>
 
@@ -161,10 +163,10 @@
                             <img class="img-fluid" src="assets/images/portafolio.jpg" alt="">
                         </figure>
                         <figure class="insurance_consultancy_image_shape1 shape position-absolute mb-0">
-                            <img class="img-fluid" src="assets/images/insurance_consultancy_image_shape_1.jpg" alt=""-->
+                            <img class="img-fluid" src="assets/images/portafolio_cuadroazul.jpg" alt=""-->
                         </figure>
                         <figure class="insurance_consultancy_image_shape2 shape position-absolute mb-0">
-                            <img class="img-fluid" src="assets/images/insurance_consultancy_image_shape_2.jpg" alt="">
+                            <img class="img-fluid" src="assets/images/portafolio_cuadroazul.jpg" alt="">
                         </figure>
                         <figure class="insurance_consultancy_image_shape3 left_right_shape shape position-absolute mb-0">
                             <img class="img-fluid" src="assets/images/insurance_consultancy_image_shape_3.png" alt="">
@@ -387,6 +389,90 @@
         </div>
     </div>
 </section>
+<!-- Carrusel de Aliados: 3 por slide, auto-advance -->
+<section class="aliados-section">
+  <div class="container text-center">
+    <h2 class="aliados-title">Aliados que impulsan nuestro crecimiento</h2>
+
+    <div id="aliadosCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false">
+      <div class="carousel-inner">
+
+        <!-- SLIDE 1 -->
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-md-4 col-8 aliado-item">
+              <div class="aliado-box"><img src="assets/images/aliado1.png" alt="Aliado 1"></div>
+            </div>
+            <div class="col-md-4 col-8 aliado-item">
+              <div class="aliado-box"><img src="assets/images/aliado2.png" alt="Aliado 2"></div>
+            </div>
+            <div class="col-md-4 col-8 aliado-item">
+              <div class="aliado-box"><img src="assets/images/aliado3.png" alt="Aliado 3"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-4 col-8 aliado-item">
+              <div class="aliado-box"><img src="assets/images/aliado4.png" alt="Aliado 4"></div>
+            </div>
+            <div class="col-md-4 col-8 aliado-item">
+              <div class="aliado-box"><img src="assets/images/aliado5.png" alt="Aliado 5"></div>
+            </div>
+            <div class="col-md-4 col-8 aliado-item">
+              <div class="aliado-box"><img src="assets/images/aliado6.png" alt="Aliado 6"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 3 -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-4 col-8 aliado-item">
+              <div class="aliado-box"><img src="assets/images/aliado7.png" alt="Aliado 7"></div>
+            </div>
+            <div class="col-md-4 col-8 aliado-item">
+              <div class="aliado-box"><img src="assets/images/aliado8.png" alt="Aliado 8"></div>
+            </div>
+            <div class="col-md-4 col-8 aliado-item">
+              <div class="aliado-box"><img src="assets/images/aliado9.png" alt="Aliado 9"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 4 (2 imágenes; el tercer espacio queda vacío para equilibrio) -->
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-md-4 col-8 aliado-item">
+              <div class="aliado-box"><img src="assets/images/aliado10.png" alt="Aliado 10"></div>
+            </div>
+            <div class="col-md-4 col-8 aliado-item">
+              <div class="aliado-box"><img src="assets/images/aliado11.png" alt="Aliado 11"></div>
+            </div>
+            <div class="col-md-4 d-none d-md-block aliado-item">
+              <!-- opcional: duplicar la primera si quieres que siempre haya 3 visibles en pantallas grandes -->
+              <!--div class="aliado-box"><img src="assets/images/aliado1.png" alt="Aliado extra"></div-->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controles -->
+      <a class="carousel-control-prev" href="#aliadosCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#aliadosCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ================================
    MÓDULO 3 – TESTIMONIOS
 ================================ -->
@@ -444,16 +530,16 @@
             </div>
             <div class="col-lg-6 col-lg-6 col-md-4 col-sm-6 col-12 text-sm-left text-center d-lg-block d-none">
                 <div class="footer-info-content">
-                    <h3 class="text-white">Newsletter</h3>
+                    <!--h3 class="text-white">Newsletter</h3-->
                     <input type="email" name="email" id="emailadd" class="form-control" placeholder="Enter your email address">
-                    <div class="input-group-append form-button">
-                        <button class="btn" name="btnsubmit" id="submitbtn" type="submit">Subscribe</button>
+                    <div class="input-group-append form-button"-->
+                        <!--button class="btn" name="btnsubmit" id="submitbtn" type="submit">Subscribe</button-->
                     </div>
                     <ul class="footer-info-content-listing m-0">
                         <li class="list-unstyled d-inline-block"><a class="hover-effect d-inline-block" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li class="list-unstyled d-inline-block"><a class="hover-effect d-inline-block" href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li class="list-unstyled d-inline-block"><a class="hover-effect d-inline-block" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li class="list-unstyled d-inline-block"><a class="hover-effect d-inline-block" href="#"><figure class="mb-0"><img src="assets/images/google_symbol.png" alt="" class="img-fluid"></figure></a></li>
+                        <li class="list-unstyled d-inline-block"><a class="hover-effect d-inline-block" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="list-unstyled d-inline-block"><a class="hover-effect d-inline-block" href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <!--li class="list-unstyled d-inline-block"><a class="hover-effect d-inline-block" href="#"><figure class="mb-0"><img src="assets/images/google_symbol.png" alt="" class="img-fluid"></figure></a></li-->
                     </ul>
                 </div> 
             </div>
@@ -471,7 +557,7 @@
                 <figure class="footer_icon position-absolute mb-0">
                     <img class="img-fluid" src="assets/images/eco.png" alt="">
                 </figure>
-                <p class="mb-0">© 2023 Syntax Consulting All RIght Reserved.</p>
+                <p class="mb-0">© 2025 ECO_ESTRATEGIA.</p>
             </div>
         </div>
     </div>

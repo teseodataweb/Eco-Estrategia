@@ -141,7 +141,7 @@ html{
 /* Home Page Header Section Style */
 
 .banner-section-outer{
-    background-image: url('../images/banner_background.png');
+    background-image: url('../images/collague_eco.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1028,7 +1028,7 @@ html{
     position: relative;
 }
 .choose_us_section::after {
-    background-image: url('../images/choose_us_right_background.jpg');
+    background-image: url('../images/verde.jpg');
     content: "";
     width: 45.2%;
     height: 100%;
@@ -3697,7 +3697,7 @@ textarea.form-control {
 }
 /* --- CTA: Visítanos o agenda una reunión --- */
 .visit_meeting_section {
-  background: linear-gradient(135deg, #8c52ff 0%, #3c1a9b 100%);
+  background: linear-gradient(135deg, #5B76F8 0%, #0A2C6B 100%);
   padding: 120px 0;
   text-align: center;
   position: relative;
@@ -3723,21 +3723,21 @@ textarea.form-control {
 /* Botón */
 .visit_meeting_section .btn_agendar {
   display: inline-block;
-  background: linear-gradient(90deg, #b47bff 0%, #a36bff 100%);
+  background: linear-gradient(90deg, #5B76F8 0%, #6e80d8 100%);
   color: #fff;
   padding: 14px 38px;
   border-radius: 40px;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.1rem;
-  box-shadow: 0 8px 25px rgba(180, 123, 255, 0.45);
+  box-shadow: 0 8px 25px rgba(123, 154, 255, 0.45);
   transition: all 0.3s ease;
 }
 
 .visit_meeting_section .btn_agendar:hover {
-  background: linear-gradient(90deg, #9a5cff 0%, #8a4aff 100%);
+  background: linear-gradient(90deg, #5B76F8 0%, #6e80d8 100%);
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(180, 123, 255, 0.6);
+  box-shadow: 0 10px 30px rgba(123, 154, 255, 0.45);
 }
 
 /* --- OPCIONAL: círculos decorativos translúcidos --- */
@@ -3922,7 +3922,7 @@ textarea.form-control {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 2.2rem;
-  color: #45286E; /* tono oscuro de tu paleta */
+  color: #71CE8A; /* tono oscuro de tu paleta */
   position: relative;
   display: inline-block;
 }
@@ -3932,7 +3932,7 @@ textarea.form-control {
   display: block;
   width: 60%;
   height: 3px;
-  background: #A164FF; /* color acento */
+  background: #5B76F8; /* color acento */
   margin: 8px auto 0 auto;
   border-radius: 2px;
 }
@@ -4182,7 +4182,7 @@ textarea.form-control {
    MÓDULO 3 – TESTIMONIOS (ajustado)
 ================================ */
 .modulo-testimonios {
-  background: linear-gradient(135deg, #8a5cf6 0%, #432b7a 100%);
+  background: linear-gradient(135deg, #4c5a9d 0%, #0A2C6B 100%);
   color: #fff;
   text-align: center;
   padding: 60px 20px 100px; /* 🔹 Menor espacio arriba */
@@ -4260,7 +4260,130 @@ div + .modulo-testimonios {
 .social-icons a:hover {
   color: #cccccc; /* gris claro al pasar el mouse */
 }
+/* Sección */
+.aliados-section {
+  background: linear-gradient(90deg, #5B76F8 0%, #71CE8A 100%);
+  border-radius: 20px;
+  padding: 30px 0 50px 0; /* menos espacio arriba; más abajo */
+  margin-top: 0; /* asegúrate que ninguna otra regla lo sobrescriba */
+}
 
+/* Título */
+.aliados-title {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 
+/* Columna / contenedor del cuadro cuadrado */
+.aliado-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
 
+/* Caja cuadrada que contiene la imagen (siempre cuadrada) */
+.aliado-box {
+  width: 160px;        /* tamaño cuadrado: ajústalo si quieres más grande */
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,0.08); /* sutil */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  margin: 6px auto;
+}
+
+/* Imagen dentro de la caja cuadrada (no se deforma) */
+.aliado-box img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Centrar flechas verticalmente y hacerlas visibles sobre el degradado */
+.carousel-control-prev, .carousel-control-next {
+  width: 5%;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%);
+  background-size: 32px 32px;
+}
+
+/* Responsive: en pantallas pequeñas mostramos 1 por "col-8" centrado */
+@media (max-width: 767px) {
+  .aliado-box {
+    width: 130px;
+    height: 130px;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    width: 8%;
+  }
+  
+}
+/* QUITAR ESPACIO EN BLANCO ENTRE ARTÍCULOS Y EL CARRUSEL */
+.descripcion-empresas {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.blog-posts {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Carrusel sin márgenes altos */
+.aliados-section {
+  margin-top: 0 !important;
+  padding-top: 20px !important;
+  border-top: 1px solid transparent; /* evita colapso de márgenes */
+}
+
+/* Quitar márgenes automáticos del H2 dentro de aliados */
+.aliados-section h2 {
+  margin-top: 0 !important;
+}
+
+/* Ajuste de posición del carrusel */
+.aliados-section {
+  margin-top: -40px;      /* Sube el carrusel hacia arriba */
+  margin-bottom: 80px;    /* Separa del apartado de abajo */
+  padding-top: 40px !important;  /* Reduce el espacio interno arriba */
+  padding-bottom: 40px !important; /* Reduce el espacio interno abajo */
+}
+/* ELIMINA EL ESPACIO EN BLANCO ANTES DEL CARRUSEL */
+.insurance_consultancy_section {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Si necesitas también quitar espacio arriba */
+.insurance_consultancy_section {
+  padding-top: 0 !important;
+}
+/* Aumentar tamaño de las imágenes del carrusel */
+.aliados-carousel img {
+  width: 200px !important;     /* antes estaba en 150px, puedes aumentar más si quieres */
+  height: 200px !important;    /* mantiene forma cuadrada */
+  object-fit: contain;         /* evita que se deformen */
+}
+/* Asegura que la imagen pueda hacer zoom sin afectar el contenedor */
+.aliados-carousel .carousel-item {
+  overflow: hidden;
+}
+
+/* Transición suave */
+.aliados-carousel .carousel-item img {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover (zoom al pasar el mouse) */
+.aliados-carousel .carousel-item img:hover {
+  transform: scale(1.15);
+}
 
