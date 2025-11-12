@@ -1996,7 +1996,7 @@ textarea {
 
 .services-banner-section::before{
     content: "";
-    background-image: url('../images/services_banner_background.jpg');
+    background-image: url('../images/foto_servicios.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: initial;
@@ -2914,6 +2914,21 @@ textarea.form-control {
   box-shadow: 0 4px 10px rgba(58, 112, 237, 0.4);
   transform: translateY(-3px);
 }
+/* --- CTA a todo el ancho --- */
+.cta_section {
+  width: 100vw; /* ocupa todo el ancho de la pantalla */
+  margin-left: calc(-50vw + 50%);
+  border-radius: 0; /* opcional: quita bordes redondeados de los lados */
+  padding: 90px 0; /* más espacio arriba y abajo */
+}
+
+/* --- Contenido interno más amplio --- */
+.cta_content {
+  max-width: 1165px; /* más ancho el bloque central */
+  margin: 0 auto;
+  padding: 60px 50px; /* un poco más de espacio interno */
+}
+
 
 /* --- Sombra decorativa sutil (efecto fondo como en el ejemplo) --- */
 .cta_section::after {
@@ -4386,4 +4401,73 @@ div + .modulo-testimonios {
 .aliados-carousel .carousel-item img:hover {
   transform: scale(1.15);
 }
+.right_box_wrapper h4 {
+    color: #0A2C6B !important;
+}
+
+.right_box_wrapper p {
+    color: #000 !important;
+}
+.testimonial_section .col-lg-4 .left_image {
+  border-left: 6px solid #0A2C6B !important;
+  border-radius: 6px 0 0 6px; /* opcional si tiene bordes redondeados */
+}
+/* ======== BOTONES HERO COMO EN LA IMAGEN ======== */
+.hero_blocks.hero_header.solo_texto .hero_ctas {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.hero_blocks.hero_header.solo_texto .hero_ctas .btn {
+  padding: 16px 45px !important;
+  border-radius: 50px !important;
+  font-weight: 700 !important;
+  font-size: 1rem !important;
+  transition: all 0.3s ease !important;
+  border: none !important;
+}
+
+/* 🔹 Botón principal: degradado azul con sombra suave */
+.hero_blocks.hero_header.solo_texto .btn-main {
+  background: linear-gradient(90deg, #215888 0%, #5B76F8 100%) !important;
+  color: #fff !important;
+  box-shadow: 0 8px 25px rgba(58, 112, 237, 0.4) !important;
+}
+
+.hero_blocks.hero_header.solo_texto .btn-main:hover {
+  background: linear-gradient(90deg, #1a4a78 0%, #4b64db 100%) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 10px 30px rgba(58, 112, 237, 0.5) !important;
+}
+
+/* === CORRECCIÓN FINAL: BOTÓN DERECHA CON CONTORNO AZUL === */
+.hero_blocks.hero_header.solo_texto .hero_ctas .btn-outline {
+  background-color: #fff !important;
+  color: #0A2C6B !important;
+  border: 2.5px solid #5B76F8 !important;
+  border-radius: 50px !important;
+  padding: 13px 34px !important;
+  font-weight: 600 !important;
+  text-transform: none !important; /* Solo primera letra mayúscula */
+  letter-spacing: 0 !important;
+  font-size: 1rem !important;
+  box-shadow: none !important;
+  transition: all 0.3s ease-in-out !important;
+  z-index: 2 !important;
+  position: relative !important;
+}
+
+/* Hover: mismo estilo del izquierdo pero con degradado */
+.hero_blocks.hero_header.solo_texto .hero_ctas .btn-outline:hover {
+  background: linear-gradient(90deg, #215888 0%, #5B76F8 100%) !important;
+  color: #fff !important;
+  border-color: #215888 !important;
+  box-shadow: 0 6px 15px rgba(58, 112, 237, 0.35) !important;
+  transform: translateY(-3px) !important;
+}
+
+
 
