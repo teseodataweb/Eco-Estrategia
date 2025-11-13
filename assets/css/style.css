@@ -2396,7 +2396,7 @@ textarea.form-control {
 
 .blog-banner-section::before{
     content: "";
-    background-image: url('../images/blog_banner_background.jpg');
+    background-image: url('../images/portafolio_eco.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: initial;
@@ -2422,7 +2422,7 @@ textarea.form-control {
 
 .case-banner-section::before{
     content: "";
-    background-image: url('../images/case_banner_background.jpg');
+    background-image: url('../images/nosotros_eco.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: initial;
@@ -3593,27 +3593,48 @@ textarea.form-control {
   transform: translateY(-3px);
 }
 
-/* Caja de imagen */
+/* ======================================================
+   NUEVO MARCO IGUAL AL EJEMPLO
+   ====================================================== */
 .hero_image_box {
   position: relative;
-  background: #71CE8A;
-  border-radius: 30px;
-  padding: 25px;
-  box-shadow: 0 15px 40px rgba(155, 90, 255, 0.1);
   display: inline-block;
-  z-index: 1;
+  border: 2px solid #71CE8A; /* Marco verde */
+  border-radius: 25px; /* Bordes redondeados */
+  padding: 15px; /* Espacio entre imagen y marco */
+  background: #fff; /* Fondo blanco dentro del borde */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
 }
 
-.hero_image img {
-  max-width: 100%;
+/* Imagen dentro del marco */
+.hero_image_box img {
+  width: 100%;
   height: auto;
-  border-radius: 20px;
-  transition: transform 0.4s ease;
+  border-radius: 15px; /* Ajuste interno */
+  display: block;
+  transition: transform 0.3s ease;
 }
 
-.hero_image img:hover {
-  transform: scale(1.05);
+.hero_image_box img:hover {
+  transform: scale(1.03);
 }
+
+/* Bloque verde decorativo que sobresale arriba */
+.hero_image_box::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 45px;
+  width: 30px;
+  height: 55px;
+  background-color: #71CE8A;
+  border-radius: 6px;
+  
+}
+
+
+/* ====================================================== */
 
 /* Responsividad */
 @media (max-width: 991px) {
@@ -4062,10 +4083,20 @@ textarea.form-control {
 ================================ */
 .valores-section {
   padding: 80px 0;
-  background: linear-gradient(135deg, #71CE8A, #bbf3ca);
   position: relative;
   overflow: hidden;
+
+  /* Fondo con capa blanca semitransparente encima de la imagen */
+  background-image:
+    linear-gradient(rgba(245, 240, 240, 0.849), rgba(245, 240, 240, 0.849)), /* velo blanco suave */
+    url('../images/valores_eco.jpg'); /* tu imagen real */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+
+
 
 /* Luces decorativas suaves */
 .valores-section::before,
@@ -4193,6 +4224,7 @@ textarea.form-control {
     grid-template-columns: 1fr;
   }
 }
+
 /* ================================
    MÓDULO 3 – TESTIMONIOS (ajustado)
 ================================ */
@@ -4279,8 +4311,8 @@ div + .modulo-testimonios {
 .aliados-section {
   background: linear-gradient(90deg, #5B76F8 0%, #71CE8A 100%);
   border-radius: 20px;
-  padding: 30px 0 50px 0; /* menos espacio arriba; más abajo */
-  margin-top: 0; /* asegúrate que ninguna otra regla lo sobrescriba */
+  padding: 30px 0 50px 0;
+  margin-top: 0;
 }
 
 /* Título */
@@ -4291,28 +4323,26 @@ div + .modulo-testimonios {
   margin-bottom: 20px;
 }
 
-/* Columna / contenedor del cuadro cuadrado */
+/* Ítems y cajas */
 .aliado-item {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px;
+  padding: 6px;
 }
 
-/* Caja cuadrada que contiene la imagen (siempre cuadrada) */
 .aliado-box {
-  width: 160px;        /* tamaño cuadrado: ajústalo si quieres más grande */
-  height: 160px;
+  width: 140px;
+  height: 140px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255,255,255,0.08); /* sutil */
+  background: rgba(255,255,255,0.08);
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  margin: 6px auto;
+  margin: 4px auto;
 }
 
-/* Imagen dentro de la caja cuadrada (no se deforma) */
 .aliado-box img {
   max-width: 80%;
   max-height: 80%;
@@ -4320,17 +4350,19 @@ div + .modulo-testimonios {
   display: block;
 }
 
-/* Centrar flechas verticalmente y hacerlas visibles sobre el degradado */
+/* Flechas */
 .carousel-control-prev, .carousel-control-next {
   width: 5%;
 }
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   filter: invert(100%);
   background-size: 32px 32px;
+
 }
 
-/* Responsive: en pantallas pequeñas mostramos 1 por "col-8" centrado */
+/* Responsive */
 @media (max-width: 767px) {
   .aliado-box {
     width: 130px;
@@ -4339,8 +4371,8 @@ div + .modulo-testimonios {
   .carousel-control-prev, .carousel-control-next {
     width: 8%;
   }
-  
 }
+
 /* QUITAR ESPACIO EN BLANCO ENTRE ARTÍCULOS Y EL CARRUSEL */
 .descripcion-empresas {
   margin-bottom: 0 !important;
@@ -4468,6 +4500,45 @@ div + .modulo-testimonios {
   box-shadow: 0 6px 15px rgba(58, 112, 237, 0.35) !important;
   transform: translateY(-3px) !important;
 }
+a.dropdown-toggle::after {
+    display: none !important;
+}
+section.valores-section .text-center h2 {
+  color: #fff !important;
+}
+/* TITULO DE VALORES */
+section.valores-section .text-center h2 {
+  color:  #0A2C6B !important;
+  font-size: 2.9rem !important; /* ← aumenta el tamaño del texto */
+  font-weight: 700; /* mantiene el grosor bonito */
+}
 
+/* 🔧 Solución: eliminar espacio lateral y forzar distribución completa */
+.aliado-box {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* mantiene forma cuadrada */
+  background: rgba(255,255,255,0.08);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
 
+.aliado-box img {
+  width: 100%; /* aumenta el tamaño dentro del cuadro */
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
 
+.aliado-box:hover img {
+  transform: scale(1.09); /* pequeño zoom al pasar el mouse */
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: space-between; /* mantiene los cuadros parejos */
+  gap: 10px; /* separa un poco entre ellos */
+}
