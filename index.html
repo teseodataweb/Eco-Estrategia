@@ -867,7 +867,7 @@
             <div class="col-lg-1 col-md-1 col-sm-1 col-1 d-md-block d-none"></div>
             <div class="col-lg-9 col-md-10 col-sm-12 col-12">
                 <div class="testimonial_box">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="row">
@@ -1225,6 +1225,22 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const carousel = document.querySelector('#carouselExampleControls');
+  if (carousel) {
+    carousel.addEventListener('slide.bs.carousel', function (event) {
+      // Evita mostrar fondo blanco mientras cambia
+      const items = carousel.querySelectorAll('.carousel-item');
+      items.forEach(item => {
+        item.style.transition = 'opacity 0s ease-in-out';
+        item.style.background = 'transparent';
+      });
+    });
+  }
+});
+</script>
+
 
 
 

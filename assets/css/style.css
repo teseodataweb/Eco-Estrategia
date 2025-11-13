@@ -3633,7 +3633,6 @@ textarea.form-control {
   
 }
 
-
 /* ====================================================== */
 
 /* Responsividad */
@@ -4542,3 +4541,96 @@ section.valores-section .text-center h2 {
   justify-content: space-between; /* mantiene los cuadros parejos */
   gap: 10px; /* separa un poco entre ellos */
 }
+/* === CORRECCIÓN FINAL TESTIMONIOS (texto encimado y estrellas duplicadas) === */
+
+.testimonial_section .testimonial_box .testimonial_box_content {
+  position: relative !important;
+  overflow: hidden !important;
+  padding: 40px 30px 40px !important;
+}
+
+.testimonial_section .testimonial_box .testimonial_box_content .text {
+  position: relative !important;
+  z-index: 2 !important;
+  line-height: 1.6 !important;
+  margin-bottom: 25px !important;
+  color: var(--e-global-color-cool-dark-gray);
+}
+
+/* Oculta la figura que se superpone detrás del texto */
+.testimonial_section .testimonial_box .testimonial_box_content .content_shape {
+  display: none !important;
+}
+
+/* Corrige la posición de las estrellas */
+.testimonial_section .testimonial_box .testimonial_box_content ul {
+  position: relative !important;
+  bottom: auto !important;
+  right: auto !important;
+  margin-top: 10px !important;
+  text-align: left !important;
+  padding-left: 0 !important;
+  z-index: 2 !important;
+}
+
+.testimonial_section .testimonial_box .testimonial_box_content ul li {
+  display: inline-block !important;
+  margin-right: 4px !important;
+}
+
+.testimonial_section .testimonial_box .testimonial_box_content ul li i {
+  color: #f39f1e !important;
+  font-size: 14px !important;
+}
+
+/* Asegura que solo se muestre una diapositiva activa a la vez */
+.carousel-item {
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item.active {
+  display: block;
+  opacity: 1;
+}
+#carouselExampleControls .carousel-inner {
+  background: transparent !important;
+  overflow: hidden;
+  position: relative;
+}
+
+#carouselExampleControls .carousel-item {
+  background: transparent !important;
+  transition: none !important;
+}
+
+#carouselExampleControls {
+  background: transparent !important;
+}
+
+#carouselExampleControls,
+#carouselExampleControls .carousel-inner,
+#carouselExampleControls .carousel-item {
+  background: transparent !important;
+}
+
+#carouselExampleControls .carousel-item {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: opacity 0s ease-in-out !important;
+  visibility: hidden;
+}
+
+#carouselExampleControls .carousel-item.active {
+  opacity: 1;
+  position: relative;
+  visibility: visible;
+}
+
+
+
+
+
