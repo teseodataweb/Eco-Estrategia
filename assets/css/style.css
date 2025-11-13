@@ -141,7 +141,7 @@ html{
 /* Home Page Header Section Style */
 
 .banner-section-outer{
-    background-image: url('../images/collague_eco.png');
+    background-image: url('../images/inicio_eco.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -4289,23 +4289,50 @@ div + .modulo-testimonios {
   display: flex;
   justify-content: center;
 }
+/* Mantener el estilo original */
 .social-icons {
+  position: absolute;
   top: 50%;
-  right: 0;
+  right: 20px;
   transform: translateY(-50%);
   display: flex;
   gap: 15px;
-}
-
-.social-icons a {
-  color: #fff;
-  font-size: 18px;
+  align-items: center;
   transition: all 0.3s ease;
+  z-index: 5; /* garantiza que se muestren sobre fondo, no sobre texto */
 }
 
-.social-icons a:hover {
-  color: #cccccc; /* gris claro al pasar el mouse */
+/* Ajusta el último item del menú (Contacto) para que no invada el área de íconos */
+.navbar-nav {
+  margin-right: 100px; /* deja espacio para los íconos */
 }
+
+/* Los íconos se reducen suavemente cuando el ancho baja */
+@media (max-width: 1300px) {
+  .social-icons {
+    gap: 10px;
+  }
+  .social-icons a {
+    font-size: 16px;
+  }
+  .navbar-nav {
+    margin-right: 80px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .social-icons {
+    gap: 8px;
+    right: 10px;
+  }
+  .social-icons a {
+    font-size: 14px;
+  }
+  .navbar-nav {
+    margin-right: 70px;
+  }
+}
+
 /* Sección */
 .aliados-section {
   background: linear-gradient(90deg, #5B76F8 0%, #71CE8A 100%);
@@ -4629,6 +4656,42 @@ section.valores-section .text-center h2 {
   position: relative;
   visibility: visible;
 }
+/* Corrige el centrado del header solo en la página de Portafolio */
+.sub-banner-section-outer.blog-banner-section {
+  margin: 0 auto;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sub-banner-section-outer.blog-banner-section .main-header .container-fluid {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  max-width: 100%;
+}
+/* Ajuste final del header de Portafolio */
+.sub-banner-section-outer.blog-banner-section {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%; /* mantiene el mismo ancho que las demás páginas */
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Corrige el centrado de la imagen de fondo sin estirarla */
+.sub-banner-section-outer.blog-banner-section .navbar_background img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.titulo-confianza {
+  color: #061157 !important;
+}
+
 
 
 
