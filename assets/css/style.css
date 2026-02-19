@@ -65,6 +65,7 @@ h5{
     font-size: 22px;
     line-height: 24px;
     font-weight: 500;
+    padding-top: 50px;
 }
 h6{
     font-size: 18px;
@@ -695,7 +696,7 @@ html{
 
 /* Swiper estilos */
 .myServicesSwiper {
-  padding: 40px 0;
+  padding: 400px 0;
 }
 
 .swiper-slide {
@@ -735,26 +736,40 @@ html{
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: #5858e9;
+  color: #ffffff;      /* flecha blanca */
+  font-weight: bold;
 }
+.swiper-button-prev {
+  left: 5px;           /* más a la izquierda */
+}
+
+.swiper-button-next {
+  right: 5px;          /* más a la derecha */
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 28px;
+}
+
 
 .swiper-pagination-bullet-active {
   background-color: #5B76F8;
 }
 
 .services_section .services_box .services_box_content{
-    position: absolute;
+    /* position: absolute; */
     transition: all 0.3s ease-in-out;
-    background-color: #5B76F8;
+    background-color:rgba(91, 117, 248, 0.87);
     text-align: center;
     padding: 40px 25px 20px;
     border-radius: 10px;
-    opacity: 90%;
-    bottom: -50px;
-    left: 0;
-    right: 0;
+    opacity: 90%;s
+    /* bottom: 5px; */
+    /* left: 0; */
+    /* right: 0; */
     margin: 0 auto;
-    width: 78%;
+    width: 100%;
     z-index: 1;
 }
 .services_section .services_box:hover .services_box_content{
@@ -797,7 +812,7 @@ html{
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
-  min-height: 450px; /* puedes ajustar si deseas más o menos alto */
+  min-height: 600px; /* puedes ajustar si deseas más o menos alto */
   background-color: rgba(60, 121, 147, 0.9); /* mantiene el morado translúcido */
   border-radius: 15px;
   overflow: hidden;
@@ -805,6 +820,7 @@ html{
   text-align: center;
   color: #fff;
   position: relative;
+  align-items: flex-end; /* baja el contenido */
 }
 
 .services_box_content {
@@ -814,6 +830,7 @@ html{
   align-items: center;
   height: 100%;
   text-align: center;
+  margin-bottom: 25px; /* separa del borde inferior */
 }
 
 /* Ajuste para los títulos y párrafos */
@@ -1065,24 +1082,33 @@ html{
     font-weight: 700;
     padding-right: 20px;
 }
-.choose_us_section .box_wrapper1{
+.choose_us_section .box_wrapper1,
+.choose_us_section .box_wrapper2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 40px; /* espacio entre cajas */
     margin-bottom: 50px;
 }
+
 .choose_us_section .box {
-    position: relative;
-    display: inline-block;
-    width: 45%;
-    margin-right: 28px;
-    transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  width: 100%; /* importante */
 }
+
 .choose_us_section .box figure{
-    position: absolute;
-    top: 15px;
-    left: 2px;
+  position: absolute;   /* quitamos absolute */
+  margin: 0;
 }
+
+
 .choose_us_section .box .box_content{
-    padding-left: 20px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
 .choose_us_section .box h2{
     color: var(--e-global-color-secondary);
     font-weight: 700;
@@ -1595,7 +1621,7 @@ textarea {
 /* Home Page Testimonial Section Style */
 
 .testimonial_section {
-    padding: 60px 0 150px;
+    padding: 150px 0 150px;
 }
 .testimonial_section .testimonial_content {
     position: relative;
@@ -2930,7 +2956,8 @@ textarea.form-control {
 }
 
 
-/* --- Sombra decorativa sutil (efecto fondo como en el ejemplo) --- */
+/* --- Sombra decorativa sutil (efecto fondo como en el ejemplo) ---
+ */
 .cta_section::after {
   content: "";
   position: absolute;
@@ -3321,6 +3348,8 @@ textarea.form-control {
   justify-content: center; /* centrado horizontal */
   flex-wrap: wrap;
   gap: 18px; /* separación entre botones */
+  position: relative;
+  z-index: 5;
 }
 
 .btn-primary-eco,
@@ -4694,6 +4723,17 @@ section.valores-section .text-center h2 {
 
 
 
+
+/* .articles_box .lower_portion {
+  transform: none !important;
+  bottom: 0 !important;
+  top: auto !important;
+}
+
+.articles_box:hover .lower_portion {
+  transform: none !important;
+  bottom: 0 !important;
+} */
 
 
 
