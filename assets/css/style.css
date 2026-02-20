@@ -1878,6 +1878,19 @@ textarea {
     border-radius: 10px 10px 0 0;
 }
 
+.footer-links-content ul li {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer-links-content ul li i {
+  font-size: 18px; /* más equilibrado */
+  min-width: 25px;  /* alinea todos los iconos */
+  margin-right: 12px; /* reduce separación exagerada */
+  margin-top: 3px; /* ajusta alineación vertical fina */
+}
+
+
 /* About Page Style */
 
 /* About Page Banner Section Style */
